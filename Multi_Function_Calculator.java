@@ -175,7 +175,7 @@ public class Multi_Function_Calculator
                                         System.out.println("Value is");
                                         System.out.println(no);
                                     }
-                                    System.out.println(" ");
+                                    System.out.println();
                                 }
                             if(power<0)
                             {
@@ -337,7 +337,6 @@ public class Multi_Function_Calculator
                 {
                     while(true)
                     {
-                        System.out.println("Hello");
                         System.out.println("Welcome to Root Calculator");
                         System.out.println();
                         System.out.println("Type Number");
@@ -356,6 +355,21 @@ public class Multi_Function_Calculator
                             {
                                 System.out.println("Denominator can't be zero");
                                 System.out.println("Try again");
+                                System.out.println();
+                            }
+                            if(numerator==0)
+                            {
+                                System.out.println("Numerator can't be zero");
+                                System.out.println("Try again");
+                                System.out.println();
+                            }
+                            else if(numerator==1 && denominator==1)
+                            {
+                                System.out.println("power= "+numerator);
+                                System.out.println("       ---");
+                                System.out.println("       "+denominator);
+                                System.out.println();
+                                System.out.println("Ans is "+no);
                                 System.out.println();
                             }
                             else
@@ -394,6 +408,7 @@ public class Multi_Function_Calculator
                         System.out.println("ENTRE MAXIMUM MARKS");
                         double a=read.nextDouble();
                         System.out.println();
+                        read.nextLine();
                         if (a>0)
                         {
                             System.out.println("ENTRE OBTAINED MARKS");
